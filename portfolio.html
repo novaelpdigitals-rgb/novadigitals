@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio — Novaelp</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<nav class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="logo">Nova<span>elp</span></a>
+    <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="portfolio.html" class="active">Portfolio</a></li>
+      <li><a href="pricing.html">Pricing</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="blog.html">Resources</a></li>
+      <li><a href="contact.html" class="nav-cta">Get a Quote</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="hero-bg"></div>
+
+<section class="page-hero">
+  <p class="section-label">Our Work</p>
+  <h1>Content Samples &amp; <em style="color:var(--primary);font-style:italic;">Portfolio</em></h1>
+  <p>Browse examples of our instructional videos and digital materials. Click any item to preview.</p>
+</section>
+
+<section class="portfolio-page">
+  <div class="container">
+
+    <!-- Filter Bar -->
+    <div class="filter-bar">
+      <button class="filter-btn active" data-filter="all">All Content</button>
+      <button class="filter-btn" data-filter="science">Science</button>
+      <button class="filter-btn" data-filter="math">Mathematics</button>
+      <button class="filter-btn" data-filter="english">English</button>
+      <button class="filter-btn" data-filter="history">History & Civic</button>
+      <button class="filter-btn" data-filter="digital">Digital Materials</button>
+      <button class="filter-btn" data-filter="custom">Custom Projects</button>
+    </div>
+
+    <!-- Portfolio Grid -->
+    <div class="portfolio-grid">
+
+      <div class="portfolio-item" data-category="science">
+        <div class="portfolio-thumb">
+          🔬
+          <div class="play-overlay" data-title="Photosynthesis Explained" data-desc="A 6-minute animated video for Primary 5 students explaining how plants make food from sunlight.">▶</div>
+        </div>
+        <div class="portfolio-info">
+          <span class="portfolio-tag">Science</span>
+          <h3>Photosynthesis Explained</h3>
+          <p>Animated | Primary 5 | 6 mins</p>
+        </div>
+      </div>
+
+      <div class="portfolio-item" data-category="math">
+        <div class="portfolio-thumb">
+          📐
+          <div class="play-overlay" data-title="Fractions Made Simple" data-desc="An interactive whiteboard-style video breaking down fractions for JSS1 students.">▶</div>
+        </div>
+        <div class="portfolio-info">
+          <span class="portfolio-tag">Mathematics</span>
+          <h3>Fractions Made Simple</h3>
+          <p>Whiteboard | JSS 1 | 8 mins</p>
+        </div>
+      </div>
+
+      <div class="portfolio-item" data-category="history">
+        <div class="portfolio-thumb">
+          🏛️
+          <div class="play-overlay" data-title="Pre-Colonial African Kingdoms" data-desc="A documentary-style video exploring the great kingdoms of pre-colonial West Africa, for SS2 students.">▶</div>
+        </div>
+        <div class="portfolio-info">
+          <span class="portfolio-tag">History</span>
+          <h3>Pre-Colonial African Kingdoms</h3>
+          <p>Documentary | SS 2 | 14 mins</p>
+        </div>
+      </div>
+
+      <div class="portfolio-item" data-category="english">
+        <div class="portfolio-thumb">
+          📖
+          <div class="play-overlay" data-title="Grammar: Tenses Workshop" data-desc="A live-action classroom-style video on present, past, and future tenses for Primary 4.">▶</div>
+        </div>
+        <div class="portfolio-info">
+          <span class="portfolio-tag">English</span>
+          <h3>Grammar: Tenses Workshop</h3>
+          <p>Live-action | Primary 4 | 10 mins</p>
+        </div>
+      </div>
+
+      <div class="portfolio-item" data-category="digital">
+        <div class="portfolio-thumb">
+          📄
+          <div class="play-overlay" data-title="JSS1 Science Digital Workbook" data-desc="A 48-page interactive PDF workbook for JSS1 Basic Science, with illustrations, exercises, and teacher notes.">📋</div>
+        </div>
+        <div class="portfolio-info">
+          <span class="portfolio-tag">Digital Materials</span>
+          <h3>JSS1 Science Digital Workbook</h3>
+          <p>PDF | 48 pages | Teacher + Student Edition</p>
+        </div>
+      </div>
+
+      <div class="portfolio-item" data-category="science">
+        <div class="portfolio-thumb">
+          ⚗️
+          <div class="play-overlay" data-title="Chemical Reactions for SS1" data-desc="A 3D animated video walking SS1 chemistry students through basic chemical reactions and equations.">▶</div>
+        </div>
+        <div class="portfolio-info">
+          <span class="portfolio-tag">Science</span>
+          <h3>Chemical Reactions (SS1 Chemistry)</h3>
+          <p>3D Animation | SS 1 | 12 mins</p>
+        </div>
+      </div>
+
+      <div class="portfolio-item" data-category="math">
+        <div class="portfolio-thumb">
+          📊
+          <div class="play-overlay" data-title="Introduction to Algebra" data-desc="A step-by-step animated explainer on solving simple algebraic equations for JSS2 Mathematics.">▶</div>
+        </div>
+        <div class="portfolio-info">
+          <span class="portfolio-tag">Mathematics</span>
+          <h3>Introduction to Algebra</h3>
+          <p>Animation | JSS 2 | 9 mins</p>
+        </div>
+      </div>
+
+      <div class="portfolio-item" data-category="custom">
+        <div class="portfolio-thumb">
+          🏫
+          <div class="play-overlay" data-title="Greenfield Academy — School Brand Film" data-desc="A 3-minute custom school brand film for Greenfield Academy showcasing their facilities, values, and student life.">▶</div>
+        </div>
+        <div class="portfolio-info">
+          <span class="portfolio-tag">Custom Project</span>
+          <h3>Greenfield Academy Brand Film</h3>
+          <p>Custom | School Branding | 3 mins</p>
+        </div>
+      </div>
+
+      <div class="portfolio-item" data-category="digital">
+        <div class="portfolio-thumb">
+          📚
+          <div class="play-overlay" data-title="Complete Primary 1-3 Digital Library" data-desc="A preview of our curated digital library for Primary 1 to 3, covering all subjects with videos, workbooks, and teacher guides.">📚</div>
+        </div>
+        <div class="portfolio-info">
+          <span class="portfolio-tag">Digital Materials</span>
+          <h3>Primary 1–3 Digital Library Preview</h3>
+          <p>Library Bundle | All subjects | 200+ items</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- VIDEO PREVIEW MODAL -->
+<div class="modal-overlay" id="videoModal">
+  <div class="modal-box">
+    <button class="modal-close" onclick="closeVideoModal()">×</button>
+    <h2 id="modalTitle">Video Title</h2>
+    <p id="modalDesc">Video description goes here.</p>
+    <div class="video-placeholder">
+      🎬
+      <span>Video preview would play here</span>
+      <span style="font-size:13px;">(Connect your video hosting — YouTube, Vimeo, or Cloudflare Stream)</span>
+    </div>
+    <div style="margin-top:20px;display:flex;gap:12px;flex-wrap:wrap;">
+      <a href="contact.html" class="btn-primary">Request Full Access</a>
+      <button class="btn-outline" onclick="closeVideoModal()">Close</button>
+    </div>
+  </div>
+</div>
+
+<section class="cta-banner">
+  <div class="container">
+    <h2>Want to See More? Get Full Access.</h2>
+    <p>Contact us to schedule a full demo of our content library for your school.</p>
+    <a href="contact.html" class="btn-primary">Book a Demo</a>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <div>
+      <a href="index.html" class="logo">Nova<span>elp</span></a>
+      <p>Video content & digital instructional materials for schools, libraries, and resource centers.</p>
+    </div>
+    <div><h4>Pages</h4><ul><li><a href="about.html">About Us</a></li><li><a href="services.html">Services</a></li><li><a href="portfolio.html">Portfolio</a></li><li><a href="pricing.html">Pricing</a></li></ul></div>
+    <div><h4>Support</h4><ul><li><a href="faq.html">FAQ</a></li><li><a href="blog.html">Resources</a></li><li><a href="contact.html">Contact Us</a></li></ul></div>
+    <div><h4>Contact</h4><p>hello@novaelp.com</p><p>+234 800 000 0000</p></div>
+  </div>
+  <p class="footer-copy">© 2025 Novaelp. All rights reserved.</p>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us — Novaelp</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<nav class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="logo">Nova<span>elp</span></a>
+    <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="pricing.html">Pricing</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="blog.html">Resources</a></li>
+      <li><a href="contact.html" class="nav-cta active">Get a Quote</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="hero-bg"></div>
+
+<section class="page-hero">
+  <p class="section-label">Get in Touch</p>
+  <h1>Let's Build Something <em style="color:var(--primary);font-style:italic;">Great Together</em></h1>
+  <p>Whether you're ready to start or just exploring your options — we'd love to hear from you.</p>
+</section>
+
+<section class="contact-page">
+  <div class="container">
+    <div class="contact-grid">
+
+      <!-- LEFT: Contact Info -->
+      <div class="contact-info">
+        <h2>We're Here to Help</h2>
+        <p>Reach out with any questions about our services, pricing, or how Novaelp can support your school's learning goals.</p>
+
+        <div class="contact-item">
+          <div class="icon">📧</div>
+          <div>
+            <strong>Email Us</strong>
+            <span>hello@novaelp.com</span>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="icon">📞</div>
+          <div>
+            <strong>Call or WhatsApp</strong>
+            <span>+234 800 000 0000</span>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="icon">📍</div>
+          <div>
+            <strong>Office Address</strong>
+            <span>14 Innovation Drive, Lekki Phase 1, Lagos, Nigeria</span>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="icon">🕐</div>
+          <div>
+            <strong>Working Hours</strong>
+            <span>Monday – Friday: 8am – 5pm WAT</span>
+          </div>
+        </div>
+
+        <div style="margin-top:40px;padding:28px;background:var(--dark2);border-radius:12px;border:1px solid rgba(255,255,255,0.07);">
+          <h4 style="margin-bottom:8px;">Typical Response Time</h4>
+          <p style="color:var(--text-muted);font-size:14px;">We respond to all inquiries within <strong style="color:var(--primary);">24 hours</strong> on business days. For urgent matters, please call or WhatsApp us directly.</p>
+        </div>
+      </div>
+
+      <!-- RIGHT: Contact Form -->
+      <div class="contact-form">
+        <h3>Send Us a Message</h3>
+        <form id="contactForm" novalidate>
+
+          <div class="form-group">
+            <label for="name">Full Name *</label>
+            <input type="text" id="name" name="name" placeholder="e.g. Chinedu Adeyemi" />
+            <p class="form-error" id="nameError">Please enter your full name.</p>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address *</label>
+            <input type="email" id="email" name="email" placeholder="you@school.edu.ng" />
+            <p class="form-error" id="emailError">Please enter a valid email address.</p>
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone / WhatsApp</label>
+            <input type="tel" id="phone" name="phone" placeholder="+234 800 000 0000" />
+          </div>
+
+          <div class="form-group">
+            <label for="school">School / Institution *</label>
+            <input type="text" id="school" name="school" placeholder="e.g. Greenfield Academy, Ibadan" />
+            <p class="form-error" id="schoolError">Please enter your school or institution name.</p>
+          </div>
+
+          <div class="form-group">
+            <label for="interest">I'm Interested In</label>
+            <select id="interest" name="interest">
+              <option value="">Select a service</option>
+              <option>Video Content Creation</option>
+              <option>Digital Learning Materials</option>
+              <option>Content Library Subscription</option>
+              <option>Custom Project</option>
+              <option>General Enquiry</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message / Request Details *</label>
+            <textarea id="message" name="message" placeholder="Tell us about your school's needs, the content you're looking for, or any questions you have..."></textarea>
+            <p class="form-error" id="messageError">Please enter your message or request details.</p>
+          </div>
+
+          <div class="form-group">
+            <label for="attachment">Attach a File (optional)</label>
+            <input type="file" id="attachment" name="attachment" accept=".pdf,.doc,.docx,.xls,.xlsx,.jpg,.png" style="padding:10px;font-size:14px;" />
+            <p style="font-size:12px;color:var(--text-muted);margin-top:6px;">Accepted: PDF, Word, Excel, JPG, PNG (max 10MB)</p>
+          </div>
+
+          <button type="submit" class="btn-primary" style="width:100%;padding:16px;font-size:16px;">Send Message →</button>
+
+          <div class="form-success" id="formSuccess">
+            ✅ Message sent! We'll be in touch within 24 hours.
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <div>
+      <a href="index.html" class="logo">Nova<span>elp</span></a>
+      <p>Video content & digital instructional materials for schools, libraries, and resource centers.</p>
+    </div>
+    <div><h4>Pages</h4><ul><li><a href="about.html">About Us</a></li><li><a href="services.html">Services</a></li><li><a href="portfolio.html">Portfolio</a></li><li><a href="pricing.html">Pricing</a></li></ul></div>
+    <div><h4>Support</h4><ul><li><a href="faq.html">FAQ</a></li><li><a href="blog.html">Resources</a></li><li><a href="contact.html">Contact Us</a></li></ul></div>
+    <div><h4>Contact</h4><p>hello@novaelp.com</p><p>+234 800 000 0000</p></div>
+  </div>
+  <p class="footer-copy">© 2025 Novaelp. All rights reserved.</p>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>

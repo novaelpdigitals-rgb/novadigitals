@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services — Novaelp</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<nav class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="logo">Nova<span>elp</span></a>
+    <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html" class="active">Services</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="pricing.html">Pricing</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="blog.html">Resources</a></li>
+      <li><a href="contact.html" class="nav-cta">Get a Quote</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="hero-bg"></div>
+
+<section class="page-hero">
+  <p class="section-label">What We Offer</p>
+  <h1>Services Designed for <em style="color:var(--primary);font-style:italic;">Modern Education</em></h1>
+  <p>From full video production to complete digital learning libraries — we handle everything so educators can focus on teaching.</p>
+</section>
+
+<section class="services-page">
+  <div class="container">
+
+    <!-- Tabs Navigation -->
+    <div class="services-tabs">
+      <button class="tab-btn active" data-tab="tab-video">🎬 Video Content</button>
+      <button class="tab-btn" data-tab="tab-digital">📋 Digital Materials</button>
+      <button class="tab-btn" data-tab="tab-custom">🛠️ Custom Projects</button>
+      <button class="tab-btn" data-tab="tab-library">📚 Content Libraries</button>
+    </div>
+
+    <!-- TAB 1: VIDEO CONTENT -->
+    <div class="tab-panel active" id="tab-video">
+      <div class="service-detail">
+        <h2>Video Content Creation</h2>
+        <p>We produce fully animated, live-action, and hybrid instructional videos for every subject and grade level — Primary 1 through SS3. Our videos are engaging, curriculum-aligned, and teacher-reviewed before delivery.</p>
+        <p>Every video follows our proven 4-part learning structure: Hook, Instruction, Practice, and Review — ensuring students retain what they watch.</p>
+        <ul>
+          <li>Fully animated explainer videos (2D & 3D)</li>
+          <li>Live-action classroom-style recordings</li>
+          <li>Whiteboard and motion graphics videos</li>
+          <li>Bilingual options (English + major local languages)</li>
+          <li>Teacher guide videos and lesson intros</li>
+          <li>Curriculum-aligned across WAEC, NECO, IGCSE standards</li>
+          <li>Download + streaming versions for both online/offline schools</li>
+        </ul>
+        <div style="margin-top:32px;">
+          <a href="contact.html" class="btn-primary">Get a Quote for Video Content</a>
+        </div>
+      </div>
+      <div class="service-visual">
+        <div class="big-icon">🎬</div>
+        <h3>Video Production</h3>
+        <p>From script to final render — we handle every step of the production process.</p>
+        <div style="text-align:left;display:flex;flex-direction:column;gap:12px;">
+          <div style="padding:12px 16px;background:rgba(255,255,255,0.04);border-radius:8px;font-size:14px;display:flex;gap:10px;align-items:center;">
+            <span>📝</span> Script & Storyboarding
+          </div>
+          <div style="padding:12px 16px;background:rgba(255,255,255,0.04);border-radius:8px;font-size:14px;display:flex;gap:10px;align-items:center;">
+            <span>🎨</span> Animation & Design
+          </div>
+          <div style="padding:12px 16px;background:rgba(255,255,255,0.04);border-radius:8px;font-size:14px;display:flex;gap:10px;align-items:center;">
+            <span>🎤</span> Professional Voiceover
+          </div>
+          <div style="padding:12px 16px;background:rgba(255,255,255,0.04);border-radius:8px;font-size:14px;display:flex;gap:10px;align-items:center;">
+            <span>✏️</span> Educator Review Round
+          </div>
+          <div style="padding:12px 16px;background:rgba(255,255,255,0.04);border-radius:8px;font-size:14px;display:flex;gap:10px;align-items:center;">
+            <span>🚀</span> Final Delivery & Support
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TAB 2: DIGITAL MATERIALS -->
+    <div class="tab-panel" id="tab-digital">
+      <div class="service-detail">
+        <h2>Digital Learning Materials</h2>
+        <p>Beyond video, we create a full suite of digital educational resources — interactive PDFs, e-books, digital workbooks, and assessment tools that complement classroom instruction.</p>
+        <p>All materials are designed for easy distribution via USB, shared drives, school LMS systems, or our cloud delivery platform.</p>
+        <ul>
+          <li>Interactive PDF workbooks and worksheets</li>
+          <li>Digital textbook supplements and e-books</li>
+          <li>Illustrated study guides and revision cards</li>
+          <li>Assessment tools and quizzes (printable + digital)</li>
+          <li>Lesson plan templates for teachers</li>
+          <li>Parent communication materials</li>
+          <li>School newsletter and bulletin templates</li>
+        </ul>
+        <div style="margin-top:32px;">
+          <a href="contact.html" class="btn-primary">Request Digital Materials</a>
+        </div>
+      </div>
+      <div class="service-visual">
+        <div class="big-icon">📋</div>
+        <h3>Digital Resources</h3>
+        <p>Beautiful, functional, ready-to-use materials your whole school can deploy immediately.</p>
+        <a href="portfolio.html" class="btn-outline" style="display:block;text-align:center;margin-top:20px;">View Sample Materials →</a>
+      </div>
+    </div>
+
+    <!-- TAB 3: CUSTOM PROJECTS -->
+    <div class="tab-panel" id="tab-custom">
+      <div class="service-detail">
+        <h2>Custom Projects</h2>
+        <p>Have a unique idea? We build fully custom content packages tailored to your school's specific curriculum, branding, culture, and learning objectives.</p>
+        <p>Whether you need a 12-episode science series in Yoruba, a branded welcome video for parents, or a complete digital library from scratch — we make it happen.</p>
+        <ul>
+          <li>Bespoke video series (any subject, any length)</li>
+          <li>School branding and intro sequences</li>
+          <li>Event documentation and school films</li>
+          <li>Custom animated characters and mascots</li>
+          <li>Localized content in regional languages</li>
+          <li>Learning management system (LMS) integration</li>
+          <li>Complete digital curriculum libraries</li>
+        </ul>
+        <div style="margin-top:32px;">
+          <a href="contact.html" class="btn-primary">Start Your Custom Project</a>
+        </div>
+      </div>
+      <div class="service-visual">
+        <div class="big-icon">🛠️</div>
+        <h3>Custom Solutions</h3>
+        <p>Tell us what you need. We'll build it from the ground up, exactly to your specs.</p>
+        <p style="font-size:13px;color:var(--text-muted);margin-top:8px;">Turnaround: 4–12 weeks depending on scope</p>
+      </div>
+    </div>
+
+    <!-- TAB 4: CONTENT LIBRARIES -->
+    <div class="tab-panel" id="tab-library">
+      <div class="service-detail">
+        <h2>Content Libraries</h2>
+        <p>Get instant access to our growing library of 1,500+ pre-made educational videos and digital materials. Available as annual school subscriptions — the most cost-effective way to equip your school with premium content.</p>
+        <p>New content is added every month, keeping your library current with curriculum updates.</p>
+        <ul>
+          <li>1,500+ ready-made videos (and growing)</li>
+          <li>All subjects, Primary 1 – SS3</li>
+          <li>Offline USB delivery available</li>
+          <li>Online streaming portal with school login</li>
+          <li>Monthly content updates included</li>
+          <li>Teacher dashboard to assign and track content</li>
+          <li>Up to 5 admin accounts per school</li>
+        </ul>
+        <div style="margin-top:32px;">
+          <a href="pricing.html" class="btn-primary">See Library Pricing</a>
+        </div>
+      </div>
+      <div class="service-visual">
+        <div class="big-icon">📚</div>
+        <h3>Content Library</h3>
+        <p>Instant access to 1,500+ videos — the fastest way to upgrade your school's resources.</p>
+        <p style="font-size:13px;color:var(--text-muted);margin-top:8px;">New content added every month</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="cta-banner">
+  <div class="container">
+    <h2>Not Sure Which Service Is Right for You?</h2>
+    <p>Book a free 30-minute consultation and we'll help you figure out the best fit.</p>
+    <a href="contact.html" class="btn-primary">Book a Free Consultation</a>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <div>
+      <a href="index.html" class="logo">Nova<span>elp</span></a>
+      <p>Video content & digital instructional materials for schools, libraries, and resource centers.</p>
+    </div>
+    <div>
+      <h4>Pages</h4>
+      <ul>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Support</h4>
+      <ul>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="blog.html">Resources</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <p>hello@novaelp.com</p>
+      <p>+234 800 000 0000</p>
+    </div>
+  </div>
+  <p class="footer-copy">© 2025 Novaelp. All rights reserved.</p>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>

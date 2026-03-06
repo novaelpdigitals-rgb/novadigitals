@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Resources & Blog — Novaelp</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<nav class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="logo">Nova<span>elp</span></a>
+    <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="pricing.html">Pricing</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="blog.html" class="active">Resources</a></li>
+      <li><a href="contact.html" class="nav-cta">Get a Quote</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="hero-bg"></div>
+
+<section class="page-hero">
+  <p class="section-label">Resources & Blog</p>
+  <h1>Insights for <em style="color:var(--primary);font-style:italic;">Modern Educators</em></h1>
+  <p>Guides, research summaries, and practical tips to help school leaders and teachers navigate digital learning.</p>
+</section>
+
+<section class="blog-page">
+  <div class="container">
+
+    <!-- Search -->
+    <div class="blog-search-bar">
+      <input type="text" id="blogSearch" placeholder="Search articles..." />
+      <span class="search-icon">🔍</span>
+    </div>
+
+    <!-- Filters -->
+    <div class="blog-filters filter-bar">
+      <button class="filter-btn active" data-filter="all">All Articles</button>
+      <button class="filter-btn" data-filter="edtech">EdTech</button>
+      <button class="filter-btn" data-filter="teaching">Teaching Tips</button>
+      <button class="filter-btn" data-filter="leadership">School Leadership</button>
+      <button class="filter-btn" data-filter="research">Research</button>
+      <button class="filter-btn" data-filter="guides">Free Guides</button>
+    </div>
+
+    <!-- Blog Grid -->
+    <div class="blog-grid">
+
+      <div class="blog-card" data-category="edtech">
+        <div class="blog-thumb">📱</div>
+        <div class="blog-content">
+          <div class="blog-meta">
+            <span class="blog-cat">EdTech</span>
+            <span class="blog-date">Jan 15, 2025</span>
+          </div>
+          <h3>Why Video Learning Is the Future of Nigerian Classrooms</h3>
+          <p>Research shows students retain 65% more information from video content vs. text alone. Here's how Nigerian schools are making the shift.</p>
+        </div>
+      </div>
+
+      <div class="blog-card" data-category="teaching">
+        <div class="blog-thumb">🎓</div>
+        <div class="blog-content">
+          <div class="blog-meta">
+            <span class="blog-cat">Teaching Tips</span>
+            <span class="blog-date">Jan 8, 2025</span>
+          </div>
+          <h3>5 Ways to Integrate Videos into Your Daily Lesson Plans</h3>
+          <p>Practical strategies for teachers to weave short instructional videos into existing lesson structures without disrupting the curriculum flow.</p>
+        </div>
+      </div>
+
+      <div class="blog-card" data-category="leadership">
+        <div class="blog-thumb">🏫</div>
+        <div class="blog-content">
+          <div class="blog-meta">
+            <span class="blog-cat">School Leadership</span>
+            <span class="blog-date">Dec 20, 2024</span>
+          </div>
+          <h3>Building a Digital Learning Strategy for Your School in 2025</h3>
+          <p>A step-by-step guide for school proprietors and principals to plan, budget for, and implement a sustainable digital learning program.</p>
+        </div>
+      </div>
+
+      <div class="blog-card" data-category="research">
+        <div class="blog-thumb">📊</div>
+        <div class="blog-content">
+          <div class="blog-meta">
+            <span class="blog-cat">Research</span>
+            <span class="blog-date">Dec 5, 2024</span>
+          </div>
+          <h3>The Impact of Visual Learning on WAEC Results: A 3-Year Study</h3>
+          <p>We tracked 12 Novaelp partner schools over 3 years. The results on WAEC pass rates were striking. Here's what we found.</p>
+        </div>
+      </div>
+
+      <div class="blog-card" data-category="guides">
+        <div class="blog-thumb">📥</div>
+        <div class="blog-content">
+          <div class="blog-meta">
+            <span class="blog-cat">Free Guide</span>
+            <span class="blog-date">Nov 28, 2024</span>
+          </div>
+          <h3>[FREE DOWNLOAD] The School Digital Learning Starter Kit</h3>
+          <p>A free 20-page PDF guide covering everything a school needs to get started with digital learning — from hardware to content selection.</p>
+        </div>
+      </div>
+
+      <div class="blog-card" data-category="teaching">
+        <div class="blog-thumb">✏️</div>
+        <div class="blog-content">
+          <div class="blog-meta">
+            <span class="blog-cat">Teaching Tips</span>
+            <span class="blog-date">Nov 14, 2024</span>
+          </div>
+          <h3>How to Make Passive Video Watchers into Active Learners</h3>
+          <p>Proven techniques to engage students before, during, and after instructional video sessions to maximize retention and participation.</p>
+        </div>
+      </div>
+
+      <div class="blog-card" data-category="edtech">
+        <div class="blog-thumb">💻</div>
+        <div class="blog-content">
+          <div class="blog-meta">
+            <span class="blog-cat">EdTech</span>
+            <span class="blog-date">Oct 30, 2024</span>
+          </div>
+          <h3>Offline vs. Online: Which Content Delivery Works Best for Your School?</h3>
+          <p>An honest comparison of USB-based offline delivery versus online streaming portals — with a practical decision framework for school leaders.</p>
+        </div>
+      </div>
+
+      <div class="blog-card" data-category="leadership">
+        <div class="blog-thumb">💰</div>
+        <div class="blog-content">
+          <div class="blog-meta">
+            <span class="blog-cat">School Leadership</span>
+            <span class="blog-date">Oct 15, 2024</span>
+          </div>
+          <h3>How to Budget for Digital Learning Without Overspending</h3>
+          <p>Smart budgeting strategies for school owners who want to invest in digital resources without breaking their operational budget.</p>
+        </div>
+      </div>
+
+      <div class="blog-card" data-category="guides">
+        <div class="blog-thumb">📋</div>
+        <div class="blog-content">
+          <div class="blog-meta">
+            <span class="blog-cat">Free Guide</span>
+            <span class="blog-date">Sep 22, 2024</span>
+          </div>
+          <h3>[FREE] 30 Discussion Questions for Any Instructional Video</h3>
+          <p>A ready-to-use PDF with 30 flexible discussion prompts teachers can adapt for any subject video lesson to drive classroom conversation.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <div id="noResults" class="no-results">
+      😕 No articles match your search. Try different keywords or browse all articles.
+    </div>
+
+  </div>
+</section>
+
+<!-- Newsletter Signup -->
+<section style="padding:80px 0;background:var(--dark2);border-top:1px solid rgba(255,255,255,0.07);">
+  <div class="container" style="max-width:600px;text-align:center;">
+    <p class="section-label">Stay Updated</p>
+    <h2 style="font-family:var(--font-display);font-size:2rem;margin-bottom:12px;">Get New Resources in Your Inbox</h2>
+    <p style="color:var(--text-muted);margin-bottom:32px;">Join 2,000+ Nigerian educators who receive monthly EdTech insights, free resources, and Novaelp updates.</p>
+    <form id="newsletterForm" style="display:flex;gap:12px;max-width:480px;margin:0 auto;" onsubmit="handleNewsletter(event)">
+      <input type="email" placeholder="your@school.edu.ng" required
+        style="flex:1;background:var(--dark3);border:1.5px solid rgba(255,255,255,0.1);border-radius:8px;padding:14px 16px;color:var(--white);font-family:var(--font-body);font-size:15px;outline:none;" />
+      <button type="submit" class="btn-primary">Subscribe</button>
+    </form>
+    <p id="newsletterSuccess" style="color:var(--primary);margin-top:16px;display:none;font-weight:600;">✅ You're subscribed! Check your inbox for a welcome email.</p>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <div>
+      <a href="index.html" class="logo">Nova<span>elp</span></a>
+      <p>Video content & digital instructional materials for schools, libraries, and resource centers.</p>
+    </div>
+    <div><h4>Pages</h4><ul><li><a href="about.html">About Us</a></li><li><a href="services.html">Services</a></li><li><a href="portfolio.html">Portfolio</a></li><li><a href="pricing.html">Pricing</a></li></ul></div>
+    <div><h4>Support</h4><ul><li><a href="faq.html">FAQ</a></li><li><a href="blog.html">Resources</a></li><li><a href="contact.html">Contact Us</a></li></ul></div>
+    <div><h4>Contact</h4><p>hello@novaelp.com</p><p>+234 800 000 0000</p></div>
+  </div>
+  <p class="footer-copy">© 2025 Novaelp. All rights reserved.</p>
+</footer>
+
+<script src="main.js"></script>
+<script>
+function handleNewsletter(e) {
+  e.preventDefault();
+  document.getElementById('newsletterSuccess').style.display = 'block';
+  e.target.reset();
+}
+</script>
+</body>
+</html>
+
