@@ -284,10 +284,13 @@ document.querySelectorAll('.service-card, .testimonial-card, .team-card, .portfo
 const mathCard = document.getElementById('math-card');
 mathCard?.addEventListener('click', () => {
   mathCard.innerHTML = `
-    <video controls width="180" height="120" autoplay>
-      <source src="Simple Calculations.mp4.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
+    <div style="position: relative; display: inline-block;">
+      <video controls width="180" height="120" autoplay>
+        <source src="Simple Calculations.mp4.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <button style="position: absolute; top: 10px; left: 10px; background: rgba(47, 126, 247, 0.8); color: white; border: none; padding: 8px 12px; border-radius: 4px; font-weight: 600; cursor: pointer;">Maths is Fun</button>
+    </div>
   `;
 });
 
