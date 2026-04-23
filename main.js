@@ -280,6 +280,17 @@ document.querySelectorAll('.service-card, .testimonial-card, .team-card, .portfo
   observer.observe(el);
 });
 
+// ===== MATH CARD VIDEO PLAY =====
+const mathCard = document.getElementById('math-card');
+mathCard?.addEventListener('click', () => {
+  mathCard.innerHTML = `
+    <video controls width="180" height="120" autoplay>
+      <source src="Simple Calculations.mp4.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  `;
+});
+
 // ===== KEYFRAME for fadeIn =====
 const style = document.createElement('style');
 style.textContent = `@keyframes fadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }`;
