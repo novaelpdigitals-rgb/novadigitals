@@ -274,8 +274,8 @@ ul { list-style: none; }
   flex-shrink: 0;
 }
 .card1 { top: 30px; left: 0; width: 220px; }
-.card2 { top: 180px; right: 0; width: 220px; }
-.card3 { bottom: 40px; left: 60px; width: 220px; }
+.card2 { top: 180px; right: 24px; width: 220px; }
+.card3 { bottom: 40px; left: 0; width: 220px; }
 
 .hero-video-card {
   position: relative;
