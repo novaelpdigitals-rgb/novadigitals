@@ -83,6 +83,16 @@ filterBtns.forEach(btn => {
 // ===== VIDEO MODAL (Portfolio Page) =====
 const videoModal = document.getElementById('videoModal');
 
+// ===== ONE VIDEO AT A TIME =====
+document.addEventListener('play', (event) => {
+  if (event.target.tagName !== 'VIDEO') return;
+  document.querySelectorAll('video').forEach(video => {
+    if (video !== event.target) {
+      video.pause();
+    }
+  });
+}, true);
+
 function openVideoModal(title, desc) {
   if (!videoModal) return;
   videoModal.querySelector('#modalTitle').textContent = title;
