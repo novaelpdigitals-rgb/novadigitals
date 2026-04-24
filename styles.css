@@ -277,6 +277,40 @@ ul { list-style: none; }
 .card2 { top: 180px; right: 0; width: 220px; }
 .card3 { bottom: 40px; left: 60px; width: 220px; }
 
+.hero-video-card {
+  position: relative;
+  display: inline-flex;
+  overflow: hidden;
+  border-radius: 18px;
+}
+
+.hero-video-card video {
+  display: block;
+  border-radius: 18px;
+  max-width: 100%;
+}
+
+.video-overlay-button {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: rgba(47, 126, 247, 0.88);
+  color: var(--white);
+  border: none;
+  padding: 10px 14px;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+  box-shadow: 0 12px 24px rgba(15, 35, 90, 0.35);
+  transition: transform 0.25s ease, background 0.25s ease;
+}
+
+.video-overlay-button:hover {
+  transform: translateY(-1px);
+  background: rgba(47, 126, 247, 1);
+}
+
 /* =============================================
    CLIENTS
    ============================================= */

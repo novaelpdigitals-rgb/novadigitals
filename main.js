@@ -284,17 +284,32 @@ document.querySelectorAll('.service-card, .testimonial-card, .team-card, .portfo
 const mathCard = document.getElementById('math-card');
 mathCard?.addEventListener('click', () => {
   mathCard.innerHTML = `
-    <div style="position: relative; display: inline-block;">
+    <div class="hero-video-card">
       <video controls width="180" height="120" autoplay>
         <source src="Simple Calculations.mp4.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video>
-      <button style="position: absolute; top: 10px; left: 10px; background: rgba(47, 126, 247, 0.8); color: white; border: none; padding: 8px 12px; border-radius: 4px; font-weight: 600; cursor: pointer;">Maths is Fun</button>
+      <button class="video-overlay-button">Maths is Fun</button>
+    </div>
+  `;
+});
+
+// ===== HISTORY CARD VIDEO PLAY =====
+const historyCard = document.querySelector('.card3');
+historyCard?.addEventListener('click', () => {
+  historyCard.innerHTML = `
+    <div class="hero-video-card">
+      <video controls width="220" height="140" autoplay>
+        <source src="History.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <button class="video-overlay-button">History & Culture</button>
     </div>
   `;
 });
 
 // ===== KEYFRAME for fadeIn =====
+
 const style = document.createElement('style');
 style.textContent = `@keyframes fadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }`;
 document.head.appendChild(style);
