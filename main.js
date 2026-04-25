@@ -290,6 +290,20 @@ document.querySelectorAll('.service-card, .testimonial-card, .team-card, .portfo
   observer.observe(el);
 });
 
+// ===== SCIENCE CARD VIDEO PLAY =====
+const scienceCard = document.getElementById('science-card');
+scienceCard?.addEventListener('click', () => {
+  scienceCard.innerHTML = `
+    <div class="hero-video-card">
+      <video controls width="220" height="140" autoplay>
+        <source src="science explained.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <button class="video-overlay-button">Science Explained</button>
+    </div>
+  `;
+});
+
 // ===== MATH CARD VIDEO PLAY =====
 const mathCard = document.getElementById('math-card');
 mathCard?.addEventListener('click', () => {
