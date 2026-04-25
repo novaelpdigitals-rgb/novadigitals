@@ -277,6 +277,24 @@ ul { list-style: none; }
 .card2 { top: 180px; right: 24px; width: 220px; }
 .card3 { bottom: 40px; left: 0; width: 220px; }
 
+.hero-card.hero-video-card {
+  flex-direction: column;
+  align-items: stretch;
+  width: 320px;
+  padding: 24px;
+}
+.hero-card.hero-video-card .play-icon {
+  margin: 0 auto 12px;
+}
+.hero-card.hero-video-card p {
+  margin-bottom: 12px;
+}
+.hero-card.hero-video-card video {
+  width: 100%;
+  max-height: 180px;
+  border-radius: 18px;
+}
+
 .hero-video-card {
   position: relative;
   display: inline-flex;
